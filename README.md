@@ -1,3 +1,8 @@
+## Chat アプリ(1on1)
+
+メールアドレスで登録し、メールアドレスで相手を指定し 1on1 でトークをする
+SMS 風の Web アプリです
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
