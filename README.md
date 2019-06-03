@@ -14,7 +14,15 @@
 
 ### バックエンド Firebase
 
-collecton として
+collection として
 
 - chats
 - users
+
+### 今後修正、追加機能
+
+- edit 機能の実装
+- ニックネームでの表示
+- Submit 時の Enter の挙動にもうひと工夫
+- avator の追加
+- Rails-API でのバックエンド実装
