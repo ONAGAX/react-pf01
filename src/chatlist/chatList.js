@@ -11,12 +11,8 @@ import Divider from "@material-ui/core/Divider";
 import Button from "@material-ui/core/Button";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import NotificationsActiveSharp from "@material-ui/icons/NotificationsActiveSharp";
-import createTypography from "@material-ui/core/styles/createTypography";
 
 class ChatListComponent extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const { classes } = this.props;
 
@@ -89,7 +85,13 @@ class ChatListComponent extends React.Component {
     } else {
       return (
         <main className={classes.root}>
-          <Button variant="outlined" className={classes.newChatBtn} fullWidth>
+          <Button
+            variant="contained"
+            fullWidth
+            color="primary"
+            className={classes.newChatBtn}
+            onClick={this.newChat}
+          >
             新規メッセージ
           </Button>
         </main>

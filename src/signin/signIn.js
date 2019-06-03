@@ -63,6 +63,33 @@ class SignInComponent extends React.Component {
               ユーザー登録
             </Link>
           </Paper>
+          <Paper className={classes.paper}>
+            <Typography className={classes.exTitle} fillWidth>
+              以下のアカウントを使ってください
+              <br />
+              もちろん新規作成も可能です
+            </Typography>
+            <Typography fullWidth>
+              <table className={classes.table}>
+                <tr>
+                  <th className={classes.th}>メールアドレス</th>
+                  <th className={classes.th}>パスワード</th>
+                </tr>
+                <tr>
+                  <td className={classes.td}>tachikawa@tokyo.jp</td>
+                  <td className={classes.td}>tachikawa</td>
+                </tr>
+                <tr>
+                  <td className={classes.td}>tokorozawa@saitama.jp</td>
+                  <td className={classes.td}>tokorozawa</td>
+                </tr>
+                <tr>
+                  <td className={classes.td}>ishigaki@okinawa.jp</td>
+                  <td className={classes.td}>ishigaki</td>
+                </tr>
+              </table>
+            </Typography>
+          </Paper>
         </main>
       </div>
     );

@@ -52,6 +52,29 @@ const styles = theme => ({
     marginTop: theme.spacing.unit * 1,
     color: "red",
     textAlign: "center"
+  },
+  exTitle: {
+    borderBottom: "1px dotted #c0c0c0",
+    fontWeight: "bold",
+    paddingTop: theme.spacing.unit * 1,
+    marginBottom: theme.spacing.unit * 2,
+    textAlign: "center"
+  },
+  table: {
+    padding: "5px",
+    border: "1px #d3d3d3 dotted",
+    borderCollapse: "collapse"
+  },
+  th: {
+    padding: "5px",
+    border: "1px #d3d3d3 dotted",
+    textAlign: "center",
+    backgroundColor: "#f5deb3"
+  },
+  td: {
+    padding: "5px",
+    border: "1px #d3d3d3 dotted",
+    textAlign: "center"
   }
 });
 

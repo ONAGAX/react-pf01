@@ -9,7 +9,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import styles from "./styles";
-import { classDeclaration } from "@babel/types";
 const firebase = require("firebase");
 
 class SignUpComponent extends React.Component {
