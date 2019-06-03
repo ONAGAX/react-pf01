@@ -28,6 +28,7 @@ class ChatTextBoxComponent extends React.Component {
     );
   }
 
+  // エンターの処理にもう一工夫必要
   userTyping = e => {
     e.key === "Enter"
       ? this.submitMessage()

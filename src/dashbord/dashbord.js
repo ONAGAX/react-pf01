@@ -56,6 +56,7 @@ class DashbordComponent extends React.Component {
     );
   }
 
+  // 送信者と現在のユーザーの真偽値
   clickedChatWhereNotSender = chatIndex =>
     this.state.chats[chatIndex].messages[
       this.state.chats[chatIndex].messages.length - 1
@@ -66,6 +67,7 @@ class DashbordComponent extends React.Component {
     this.messageRead();
   };
 
+  // クリックした場合のベルマーク消去
   messageRead = () => {
     const docKey = this.buildDocKey(
       this.state.chats[this.state.selectedChat].users.filter(
@@ -82,6 +84,7 @@ class DashbordComponent extends React.Component {
     }
   };
 
+  // 新規作成ですでにdocが存在する場合、セレクトの値も変えて強制遷移
   goToChat = async (docKey, message) => {
     const usersInChat = docKey.split(":");
     const chat = this.state.chats.find(_chat =>
@@ -92,6 +95,7 @@ class DashbordComponent extends React.Component {
     this.submitMessage(message);
   };
 
+  // 新規作成でdocKyeを作成しつつ、メッセージもいれて強制遷移
   newChatSubmit = async chatObj => {
     const docKey = this.buildDocKey(chatObj.sendTo);
     await firebase
